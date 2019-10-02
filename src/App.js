@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Player from './Player'
 
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div>
-      <Player/>
+        <Player/>
       </div>
     </div>
   );
