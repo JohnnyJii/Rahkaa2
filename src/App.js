@@ -1,6 +1,6 @@
 import React from 'react'
-import Player from './Player'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Player from './Player';
 
 function App() {
   return (
