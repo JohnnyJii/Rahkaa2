@@ -5,9 +5,7 @@ import Player from './Player';
 function App() {
   return (
     <div className="App">
-      <div>
-        <Player/>
-      </div>
+      <Player/>
     </div>
   );
 }
