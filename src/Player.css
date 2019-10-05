@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 .player-wrapper {
     position: relative;
     padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
@@ -11,4 +13,34 @@
 
 .test {
     padding-top: 30px;
+}
+
+.button {
+    background-color: #e7e7e7;;
+    margin-right: 5px;
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 31%;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.header {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 5px;
+}
+
+#muted {
+    font-family: 'Lato', sans-serif;
+    margin-left: 5px;
+}
+
+.divtest {
+    margin-top: 20px;
+}
+
+.progressbar {
+    width: 100%;
+    display: inline-block;
 }
