@@ -18,7 +18,8 @@ class Player extends Component {
     played: 0,
     volume: 0.8,
     muted: false,
-    loaded: 0
+    loaded: 0,
+    url: null
   }
 
   load = url => {
@@ -75,8 +76,20 @@ class Player extends Component {
     }
   }
 
+  renderLoadButton = (url, h1) => {
+    return (
+        <button className="button" onClick={() => this.load(url)}>
+          {h1}
+        </button>
+    )
+  }
+
+  ref = player => {
+    this.player = player
+  }
+
   render() {
-    const {controls, playing, played, playbackRate, volume, muted, loaded} = this.state
+    const {url, controls, playing, played, playbackRate, volume, muted, loaded} = this.state
 
     return (
         <Container>
@@ -89,7 +102,8 @@ class Player extends Component {
             <Col sm={8} className="test">
               <div className="player-wrapper">
                 <ReactPlayer className="react-player"
-                             url='https://www.youtube.com/watch?v=CnxiRt4qeM4'
+                             url={url}
+                             ref={this.ref}
                              loop
                              controls={controls}
                              playing={playing}
@@ -112,6 +126,21 @@ class Player extends Component {
               </div>
             </Col>
             <Col sm={4} className="test">
+
+              <div>
+                <p className="header">Players</p>
+                {this.renderLoadButton ('https://www.youtube.com/watch?v=43HCYSXZ9GI', 'Youtube')}
+                {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Facebook')}
+                {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Twitch')}
+              </div>
+
+              <div className="divtest">
+                <input id="input" ref={input => { this.urlInput = input }} type='text' placeholder='Custom URL' />
+                <button id="loadbutton" onClick={() => this.setState({ url: this.urlInput.value })}>Load</button>
+              </div>
+
+              <br/>
+
               <div>
                 <p className="header">Controls</p>
                 <button className="button" onClick={this.handleStop}>Stop</button>
