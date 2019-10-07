@@ -9,6 +9,7 @@ import Container from 'react-bootstrap/Container';
 import { hot } from 'react-hot-loader'
 import {findDOMNode} from 'react-dom';
 import screenfull from 'screenfull'
+import Share from './Share'
 
 class Player extends Component {
   state = {
@@ -96,6 +97,7 @@ class Player extends Component {
           <Row>
             <Col>
               <Navigator/>
+              <Share />
             </Col>
           </Row>
           <Row>
