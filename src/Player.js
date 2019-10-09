@@ -97,7 +97,6 @@ class Player extends Component {
           <Row>
             <Col>
               <Navigator/>
-              <Share />
             </Col>
           </Row>
           <Row>
@@ -131,10 +130,9 @@ class Player extends Component {
 
               <div>
                 <p className="header">Players</p>
-                {this.renderLoadButton ('https://www.youtube.com/watch?v=43HCYSXZ9GI', 'Youtube')}
+                {this.renderLoadButton ('https://www.youtube.com/watch?v=y5Hoy45wG4o&t=16s', 'Youtube')}
                 {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Facebook')}
                 {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Twitch')}
-                {this.renderLoadButton('https://www.youtube.com/watch?v=y5Hoy45wG4o&t=16s', 'Sub Example')}
               </div>
 
               <div className="divtest">
@@ -182,6 +180,7 @@ class Player extends Component {
 
             </Col>
           </Row>
+          <Share />
         </Container>
     )
 }
