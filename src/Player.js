@@ -115,8 +115,8 @@ class Player extends Component {
                              onProgress={this.handleProgress}
                              width='100%'
                              height='100%'
-                >
-                </ReactPlayer>
+                             
+                />
               </div>
               <div className="divtest">
                 <p className="header">Played</p>
@@ -134,6 +134,7 @@ class Player extends Component {
                 {this.renderLoadButton ('https://www.youtube.com/watch?v=43HCYSXZ9GI', 'Youtube')}
                 {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Facebook')}
                 {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Twitch')}
+                {this.renderLoadButton('https://www.youtube.com/watch?v=y5Hoy45wG4o&t=16s', 'Sub Example')}
               </div>
 
               <div className="divtest">
