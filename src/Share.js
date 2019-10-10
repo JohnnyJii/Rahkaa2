@@ -21,7 +21,7 @@ const Share =()=> {
       shareUrl = 'http://localhost:8000' + path
     } else {
       shareUrl = window.location.href
-    } 
+    }
 
     const title = 'Rahkaa'
     const iconSize = 35

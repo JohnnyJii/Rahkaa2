@@ -114,7 +114,7 @@ class Player extends Component {
                              onProgress={this.handleProgress}
                              width='100%'
                              height='100%'
-                             
+
                 />
               </div>
               <div className="divtest">
@@ -131,7 +131,7 @@ class Player extends Component {
               <div>
                 <p className="header">Players</p>
                 {this.renderLoadButton ('https://www.youtube.com/watch?v=y5Hoy45wG4o&t=16s', 'Youtube')}
-                {this.renderLoadButton('https://www.facebook.com/facebook/videos/10153231379946729/', 'Facebook')}
+                {this.renderLoadButton('https://www.facebook.com/Discovery/videos/2352952871589042/', 'Facebook')}
                 {this.renderLoadButton('https://www.twitch.tv/videos/106400740', 'Twitch')}
               </div>
 
